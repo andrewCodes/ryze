@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.977" height="11.812" viewBox="0 0 21.977 11.812">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_47" data-name="Path 47" d="M15.468-27.554c-.363,0-.62.743-.666.986h0a1.777,1.777,0,0,0,.4,1.684h0c.821.644,1.681,1.244,2.56,1.819h0c-4.3.193-8.622.2-12.924.372h0c-1.178.048-2.359.1-3.534.2h0c-.979.089-1,2.781-.124,2.7h0c5.229-.475,10.524-.4,15.77-.576h0L18.1-20.4h0q-1.329,1.078-2.661,2.153h0c-.661.533-.4,3.148.573,2.364h0q3.05-2.459,6.078-4.944h0c.541-.446.606-2.085-.047-2.477h0a61.012,61.012,0,0,1-6.369-4.165h0A.335.335,0,0,0,15.468-27.554Z" transform="translate(-0.539 27.554)" fill="#121e3c"/>
+    </clipPath>
+  </defs>
+  <g id="Group_13" data-name="Group 13" clip-path="url(#clip-path)">
+    <path id="Path_46" data-name="Path 46" d="M.468-27.756H22.606v11.908H.468Z" transform="translate(-0.5 27.665)" fill="#121e3c"/>
+  </g>
+</svg>
