@@ -1,0 +1,58 @@
+.hero {
+    width: 100%;
+    height: 72rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/img/photos/hero.png);
+    background-size: cover;
+    background-position: top;
+    color: $color-white;
+
+    &__logo {
+        position: absolute;
+        left: 4rem;
+        bottom: 4rem;
+    }
+}
+
+.hero-content {
+    background-image: url(/img/abstract/speechDark.svg);
+    background-size: 50rem 35rem;
+    background-repeat: no-repeat;
+    margin-left: 7.6rem;
+    width: 67.5rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        font-family: $font-heading;
+        text-transform: uppercase;
+        font-size: 10rem;
+        letter-spacing: 15px;
+        line-height: .9;
+        color: #FFFFFF;
+        opacity: 1;
+        margin-left: 5rem;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: start;
+        margin-left: 5rem;
+    }
+
+    &__icon {
+        margin-right: 4rem;
+    }
+
+    &__subtitle {
+        margin-right: 4rem;
+        font-family: $font-primary;
+        font-size: 1.4rem;
+        width: 20ch;
+    }
+}

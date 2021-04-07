@@ -154,17 +154,17 @@ html {
   transform: rotate(180deg); }
 
 .site-head {
-  padding: 0 4rem;
+  padding: 0;
   background: #ffffff;
   color: #121E3C; }
   .site-head:focus {
     outline-color: #EAF2FF; }
   .site-head__inner {
+    height: 8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    gap: 0 1rem; }
+    align-items: center; }
   .site-head__brand {
     display: block;
     width: 10rem; }
@@ -179,6 +179,19 @@ html {
       margin-right: 0; }
   .site-head__social-img:hover {
     filter: brightness(0) saturate(100%) invert(92%) sepia(14%) saturate(837%) hue-rotate(136deg) brightness(87%) contrast(94%); }
+
+.hero {
+  width: 100%;
+  position: relative; }
+  .hero__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px; }
+
+.container {
+  padding: 0 4rem;
+  margin: auto; }
 
 .nav__list {
   display: flex;
