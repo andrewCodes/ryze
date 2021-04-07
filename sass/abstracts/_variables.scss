@@ -1,8 +1,10 @@
 // RESPONSIVE BREAKPOINTS
 
+$bp-sm: 42.5em; //680px
+
 // FONTS
 
-$font-body: 'Montserrat', sans-serif;
+$font-primary: 'Montserrat', sans-serif;
 $font-heading: 'Bebas Neue', cursive;
 
 // COLOURS
@@ -13,3 +15,7 @@ $color-dark-2: #132450;
 $color-primary: #96D6D9;
 $color-light: #EAF2FF;
 $color-light-2: #EBF7F8;
+
+// SVG FILTERS
+
+$filter-primary: brightness(0) saturate(100%) invert(92%) sepia(14%) saturate(837%) hue-rotate(136deg) brightness(87%) contrast(94%); // changes $color-dark to $color-primary on SVG img... first two properties convert $color-dark to black, following properties convert black to $color-primary

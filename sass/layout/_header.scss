@@ -1,0 +1,45 @@
+.site-head {
+    padding: 0;
+    background: $color-white;
+    color: $color-dark;
+
+    &:focus {
+        outline-color: $color-light;
+    }
+
+    &__inner {
+        height: 8rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__brand {
+        display: block;
+        width: 10rem;
+    }
+
+    &__social {
+        display: flex;
+
+        @include respond(bp-sm) {
+            display: none;
+        }
+    }
+
+    &__social-link {
+        margin-right: 2rem;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &__social-img {
+
+        &:hover {
+            filter: $filter-primary;
+        }
+    }
+}
