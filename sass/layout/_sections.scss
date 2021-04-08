@@ -7,8 +7,29 @@
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: 4rem center;
+
+    @include respond(bp-lg) {
+        padding-top: 10rem;
+        background-position: left 5rem;
+    }
+
+    @include respond(bp-xs) {
+        padding-top: 5rem;
+        background-position: left top;
+        background-repeat: repeat-y;
+    }
+
 }
 
-#section2 > .inner > img {
-    margin: 0 6rem 6rem 0;
+#section2 > .inner > .img-holder {
+    width: 50rem;
+    max-width: 40%;
+
+    @include respond(bp-sm) {
+        width: 20rem;
+    }
+
+    @include respond(bp-xs) {
+        display: none;
+    }
 }

@@ -1,10 +1,14 @@
 .signup-form {
     position: fixed;
-    //z-index: 10;
+    z-index: 10;
     bottom: 0;
     right: 4rem;
     padding: 2rem 3rem 3rem 3rem;
     background-color: $color-primary;
+
+    @include respond(bp-md) {
+        right: 0;
+    }
 
     &__title {
         margin-top: 0;
