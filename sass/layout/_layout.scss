@@ -1,4 +1,14 @@
 .container {
+    position: relative;
     padding: 0 4rem;
     margin: auto;
+}
+
+.inner {
+    position: relative;
+    margin: 0 auto;
+    max-width: 110rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

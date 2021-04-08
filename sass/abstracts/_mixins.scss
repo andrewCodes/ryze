@@ -26,3 +26,21 @@
     width: 100%;
     height: auto;
 }
+
+/////////////////////////////
+// TEXT
+
+@mixin h2 {
+    font-family: $font-heading;
+    font-size: 6rem;
+    letter-spacing: 9px;
+    line-height: 1;
+    color: $color-dark;
+}
+
+@mixin bodyText {
+    font-family: $font-primary;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: $color-dark;
+}
