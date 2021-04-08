@@ -1,0 +1,15 @@
+html {
+    font-size: 62.5%; // 1rem = 10px
+
+    @include respond(bp-xl) {
+        font-size: 57.5%;
+    }
+
+    @include respond(bp-lg) {
+        font-size: 50%;
+    }
+
+    @include respond(bp-md) {
+        font-size: 45%;
+    }
+}

@@ -23,7 +23,7 @@
     &__social {
         display: none;
 
-        @include respond(bp-sm){
+        @include respond(bp-lg){
             display: flex;
         }
     }
@@ -31,7 +31,7 @@
     &__social-link {
         display: none;
 
-        @include respond(bp-sm){
+        @include respond(bp-lg){
             display: flex;
             margin-right: 2rem;
             margin-top: 2rem;
@@ -45,7 +45,7 @@
     &__social-img {
         display: none;
         
-        @include respond(bp-sm){
+        @include respond(bp-lg){
             display: flex;
         }
     }

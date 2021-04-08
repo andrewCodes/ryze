@@ -1,5 +1,17 @@
-/* Box sizing rules */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap");
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 72em) {
+    html {
+      font-size: 57.5%; } }
+  @media only screen and (max-width: 60em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 46.25em) {
+    html {
+      font-size: 45%; } }
+
+/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -65,9 +77,6 @@ select {
 @font-face {
   font-family: BebasBook;
   src: url(/fonts/Bebas-Neue-Book.ttf.woff); }
-
-html {
-  font-size: 62.5%; }
 
 .btn {
   cursor: pointer;
@@ -207,10 +216,14 @@ html {
 
 .signup-form {
   position: fixed;
+  z-index: 10;
   bottom: 0;
   right: 4rem;
   padding: 2rem 3rem 3rem 3rem;
   background-color: #96D6D9; }
+  @media only screen and (max-width: 46.25em) {
+    .signup-form {
+      right: 0; } }
   .signup-form__title {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -246,15 +259,27 @@ html {
 .text-card {
   display: flex;
   flex-direction: column;
-  max-width: 50rem; }
+  max-width: 50%; }
+  @media only screen and (max-width: 46.25em) {
+    .text-card {
+      margin: 0 2rem; } }
+  @media only screen and (max-width: 40em) {
+    .text-card {
+      max-width: 60%; } }
+  @media only screen and (max-width: 35em) {
+    .text-card {
+      width: 100%;
+      max-width: 100%; } }
   .text-card__header {
     font-family: "BebasBook", sans-serif;
     font-size: 6rem;
     letter-spacing: 9px;
     line-height: 1;
-    color: #121E3C; }
+    color: #121E3C;
+    max-width: 20ch; }
   .text-card__body {
-    padding: 3rem 0; }
+    padding: 3rem 0;
+    max-width: 90ch; }
   .text-card__text {
     font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
@@ -278,12 +303,16 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 46.25em) {
+      .site-head__inner {
+        padding-left: 40px;
+        padding-right: 40px; } }
   .site-head__brand {
     display: block;
     width: 10rem; }
   .site-head__social {
     display: flex; }
-    @media only screen and (max-width: 42.5em) {
+    @media only screen and (max-width: 60em) {
       .site-head__social {
         display: none; } }
   .site-head__social-link {
@@ -302,8 +331,13 @@ html {
   justify-content: center;
   background-image: url(/img/photos/hero.png);
   background-size: cover;
-  background-position: top;
+  background-position: left top;
   color: #ffffff; }
+  @media only screen and (max-width: 35em) {
+    .hero {
+      justify-content: start;
+      background-position: center top;
+      padding-top: 4rem; } }
   .hero__logo {
     position: absolute;
     left: 4rem;
@@ -311,14 +345,23 @@ html {
 
 .hero-content {
   background-image: url(/img/abstract/speechDark.svg);
-  background-size: 50rem 35rem;
+  background-size: contain;
   background-repeat: no-repeat;
   margin-left: 7.6rem;
   width: 67.5rem;
-  height: 35rem;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media only screen and (max-width: 72em) {
+    .hero-content {
+      margin-left: 6rem; } }
+  @media only screen and (max-width: 60em) {
+    .hero-content {
+      margin-left: 2rem; } }
+  @media only screen and (max-width: 46.25em) {
+    .hero-content {
+      width: 90%; } }
   .hero-content__title {
     font-family: "BebasBook", sans-serif;
     text-transform: uppercase;
@@ -328,27 +371,47 @@ html {
     color: #FFFFFF;
     opacity: 1;
     margin-left: 5rem; }
+    @media only screen and (max-width: 35em) {
+      .hero-content__title {
+        align-self: flex-start;
+        font-size: 8rem; } }
   .hero-content__footer {
     display: flex;
     justify-content: start;
-    margin-left: 5rem; }
+    margin-left: 5rem;
+    margin-top: 2rem; }
+    @media only screen and (max-width: 35em) {
+      .hero-content__footer {
+        flex-wrap: wrap; } }
   .hero-content__icon {
     margin-right: 4rem; }
+    @media only screen and (max-width: 35em) {
+      .hero-content__icon {
+        display: none; } }
   .hero-content__subtitle {
     margin-right: 4rem;
     font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
     width: 20ch; }
+    @media only screen and (max-width: 35em) {
+      .hero-content__subtitle {
+        margin-bottom: 2rem; } }
+  @media only screen and (max-width: 35em) {
+    .hero-content__btn {
+      display: block; } }
 
 .container {
   position: relative;
-  padding: 0 4rem;
+  padding: 0 40px;
   margin: auto; }
+  @media only screen and (max-width: 46.25em) {
+    .container {
+      padding: 0; } }
 
 .inner {
   position: relative;
   margin: 0 auto;
-  max-width: 110rem;
+  max-width: 1100px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
@@ -371,13 +434,13 @@ html {
 
 .nav__social {
   display: none; }
-  @media only screen and (max-width: 42.5em) {
+  @media only screen and (max-width: 60em) {
     .nav__social {
       display: flex; } }
 
 .nav__social-link {
   display: none; }
-  @media only screen and (max-width: 42.5em) {
+  @media only screen and (max-width: 60em) {
     .nav__social-link {
       display: flex;
       margin-right: 2rem;
@@ -387,7 +450,7 @@ html {
 
 .nav__social-img {
   display: none; }
-  @media only screen and (max-width: 42.5em) {
+  @media only screen and (max-width: 60em) {
     .nav__social-img {
       display: flex; } }
 
@@ -397,6 +460,22 @@ html {
   background-size: 65%;
   background-repeat: no-repeat;
   background-position: 4rem center; }
+  @media only screen and (max-width: 60em) {
+    #section2 {
+      padding-top: 10rem;
+      background-position: left 5rem; } }
+  @media only screen and (max-width: 35em) {
+    #section2 {
+      padding-top: 5rem;
+      background-position: left top;
+      background-repeat: repeat-y; } }
 
-#section2 > .inner > img {
-  margin: 0 6rem 6rem 0; }
+#section2 > .inner > .img-holder {
+  width: 50rem;
+  max-width: 40%; }
+  @media only screen and (max-width: 40em) {
+    #section2 > .inner > .img-holder {
+      width: 20rem; } }
+  @media only screen and (max-width: 35em) {
+    #section2 > .inner > .img-holder {
+      display: none; } }

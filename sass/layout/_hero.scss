@@ -7,8 +7,14 @@
     justify-content: center;
     background-image: url(/img/photos/hero.png);
     background-size: cover;
-    background-position: top;
+    background-position: left top;
     color: $color-white;
+
+    @include respond(bp-xs) {
+        justify-content: start;
+        background-position: center top;
+        padding-top: 4rem;
+    }
 
     &__logo {
         position: absolute;
@@ -19,14 +25,26 @@
 
 .hero-content {
     background-image: url(/img/abstract/speechDark.svg);
-    background-size: 50rem 35rem;
+    background-size: contain;
     background-repeat: no-repeat;
     margin-left: 7.6rem;
     width: 67.5rem;
-    height: 35rem;
+    padding: 3rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include respond(bp-xl) {
+        margin-left: 6rem;
+    }
+
+    @include respond(bp-lg) {
+        margin-left: 2rem;
+    }
+
+    @include respond(bp-md) {
+        width: 90%;
+    }
 
     &__title {
         font-family: $font-heading;
@@ -37,16 +55,31 @@
         color: #FFFFFF;
         opacity: 1;
         margin-left: 5rem;
+
+        @include respond(bp-xs) {
+            align-self: flex-start;
+            font-size: 8rem;
+        }
     }
 
     &__footer {
         display: flex;
         justify-content: start;
         margin-left: 5rem;
+        margin-top: 2rem;
+
+        @include respond(bp-xs) {
+            flex-wrap: wrap;
+        }
     }
 
     &__icon {
         margin-right: 4rem;
+
+        @include respond(bp-xs) {
+            display: none;
+        }
+        
     }
 
     &__subtitle {
@@ -54,5 +87,16 @@
         font-family: $font-primary;
         font-size: 1.4rem;
         width: 20ch;
+
+        @include respond(bp-xs) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__btn {
+
+        @include respond(bp-xs) {
+            display: block;
+        }
     }
 }
