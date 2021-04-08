@@ -76,7 +76,7 @@ select {
 
 @font-face {
   font-family: BebasBook;
-  src: url(/fonts/Bebas-Neue-Book.ttf.woff); }
+  src: url(../fonts/Bebas-Neue-Book.ttf.woff); }
 
 .btn {
   cursor: pointer;
