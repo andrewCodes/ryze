@@ -1,0 +1,26 @@
+.text-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+
+    &__header {
+        @include h2;
+    }
+
+    &__body {
+        padding: 3rem 0;
+    }
+
+    &__text {
+        @include bodyText;
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__footer {
+        padding: 3rem 0;
+    }
+}

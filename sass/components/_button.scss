@@ -31,6 +31,27 @@
             transform: scale(1.1);
         }
     }
+
+    &--link,
+    &--link:link,
+    &--link:visited {
+        font-family: $font-heading;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        line-height: 1.8;
+        padding-bottom: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-dark;
+        background-image: url(/img/abstract/underline.svg);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        &:hover {
+            background-size: 100%; // consider better way of doing this... like the effect, don't like animating background size
+        }
+    }
 }
 
 .btn--brush span {
