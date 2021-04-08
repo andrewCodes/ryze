@@ -54,11 +54,14 @@
   }
   
   .burger-menu[enabled='true'] .burger-menu__panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     z-index: 1000;
     top: 0;
     left: 0;
-    padding: 5rem 1.5rem 2rem 1.5rem;
+    padding: 5rem 1.5rem;
     width: 100vw;
     height: 100vh;
     visibility: hidden;
@@ -73,10 +76,15 @@
 
   .burger-menu[enabled='true'] .nav__list {
     display: block;
+    text-align: center;
   }
   
   .burger-menu[enabled='true'] .nav__list > * + * {
     margin-top: 2rem;
+  }
+
+  .burger-menu[enabled='true'] .nav__item {
+    margin-right: 0;
   }
   
   .burger-menu[enabled='true'] .nav__link {
