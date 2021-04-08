@@ -125,6 +125,11 @@ select {
   position: relative;
   z-index: 1; }
 
+.burger-menu__logo {
+  position: absolute;
+  top: 20px;
+  left: 40px; }
+
 .burger-menu__trigger {
   display: none; }
 
@@ -192,7 +197,7 @@ select {
   margin-right: 0; }
 
 .burger-menu[enabled='true'] .nav__link {
-  font-size: 2rem; }
+  font-size: 3.5rem; }
 
 .burger-menu[enabled='true'][status='open'] .burger-menu__panel {
   visibility: visible;
@@ -464,7 +469,9 @@ select {
   display: none; }
   @media only screen and (max-width: 60em) {
     .nav__social-img {
-      display: flex; } }
+      display: flex;
+      width: 3rem;
+      height: 3rem; } }
 
 #section2 {
   padding-top: 12rem;

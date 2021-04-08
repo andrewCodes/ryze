@@ -1,5 +1,12 @@
 .burger-menu {
 
+  &__logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+
+  }
+
     &__trigger {
         display: none; // default state for trigger
     }
@@ -88,7 +95,7 @@
   }
   
   .burger-menu[enabled='true'] .nav__link {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 
   // create transitions
