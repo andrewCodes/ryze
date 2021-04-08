@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(/img/photos/hero.png);
+    background-image: url(../img/photos/hero.png);
     background-size: cover;
     background-position: left top;
     color: $color-white;
@@ -24,7 +24,7 @@
 }
 
 .hero-content {
-    background-image: url(/img/abstract/speechDark.svg);
+    background-image: url(../img/abstract/speechDark.svg);
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 7.6rem;
