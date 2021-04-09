@@ -123,7 +123,8 @@ select {
 
 .btn--brush span {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin: auto; }
 
 .burger-menu__logo {
   position: absolute;
@@ -301,6 +302,12 @@ select {
     margin-bottom: 2rem; }
     .text-card__text:last-of-type {
       margin-bottom: 0; }
+    @media only screen and (max-width: 40em) {
+      .text-card__text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.8rem;
+        line-height: 1.6;
+        color: #121E3C; } }
   .text-card__footer {
     padding: 3rem 0; }
 
@@ -396,7 +403,7 @@ select {
     margin-top: 2rem; }
     @media only screen and (max-width: 35em) {
       .hero-content__footer {
-        grid-template-rows: repeat(2, min-content); } }
+        grid-template-rows: repeat(2, max-content); } }
   .hero-content__icon {
     margin-right: 4rem; }
   .hero-content__subtitle {
@@ -406,7 +413,8 @@ select {
     width: 20ch; }
     @media only screen and (max-width: 35em) {
       .hero-content__subtitle {
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem;
+        font-size: 2rem; } }
   @media only screen and (max-width: 35em) {
     .hero-content__btn {
       grid-row: 2;
