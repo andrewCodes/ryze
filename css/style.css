@@ -389,18 +389,16 @@ select {
         align-self: flex-start;
         font-size: 8rem; } }
   .hero-content__footer {
-    display: flex;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: repeat(2, min-content) max-content;
+    grid-template-rows: min-content;
     margin-left: 5rem;
     margin-top: 2rem; }
     @media only screen and (max-width: 35em) {
       .hero-content__footer {
-        flex-wrap: wrap; } }
+        grid-template-rows: repeat(2, min-content); } }
   .hero-content__icon {
     margin-right: 4rem; }
-    @media only screen and (max-width: 35em) {
-      .hero-content__icon {
-        display: none; } }
   .hero-content__subtitle {
     margin-right: 4rem;
     font-family: "Montserrat", sans-serif;
@@ -411,7 +409,8 @@ select {
         margin-bottom: 2rem; } }
   @media only screen and (max-width: 35em) {
     .hero-content__btn {
-      display: block; } }
+      grid-row: 2;
+      grid-column: 1/-1; } }
 
 .container {
   position: relative;
