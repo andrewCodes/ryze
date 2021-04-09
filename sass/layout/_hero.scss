@@ -63,23 +63,19 @@
     }
 
     &__footer {
-        display: flex;
-        justify-content: start;
+        display: grid;
+        grid-template-columns: repeat(2, min-content) max-content;
+        grid-template-rows: min-content;
         margin-left: 5rem;
         margin-top: 2rem;
 
         @include respond(bp-xs) {
-            flex-wrap: wrap;
+            grid-template-rows: repeat(2, min-content);
         }
     }
 
     &__icon {
         margin-right: 4rem;
-
-        @include respond(bp-xs) {
-            display: none;
-        }
-        
     }
 
     &__subtitle {
@@ -96,7 +92,8 @@
     &__btn {
 
         @include respond(bp-xs) {
-            display: block;
+            grid-row: 2;
+            grid-column: 1/-1;
         }
     }
 }
