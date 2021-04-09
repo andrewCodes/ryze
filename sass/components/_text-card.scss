@@ -33,6 +33,10 @@
         &:last-of-type {
             margin-bottom: 0;
         }
+
+        @include respond(bp-sm) {
+            @include bodyTextSm;
+        }
     }
 
     &__footer {

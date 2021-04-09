@@ -44,3 +44,10 @@
     line-height: 1.6;
     color: $color-dark;
 }
+
+@mixin bodyTextSm {
+    font-family: $font-primary;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: $color-dark;
+}
