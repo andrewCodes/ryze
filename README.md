@@ -77,5 +77,5 @@ Me - Andrew Long\
 [Me on LinkedIn](https://linkedin.com/andrewrklong)
 
 ### Design
-Ryze
+Ryze\
 [Website](https://www.ryzeagency.co.uk)
