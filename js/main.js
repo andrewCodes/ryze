@@ -55,7 +55,7 @@ class BurgerMenu extends HTMLElement { // create new Class
           <button class="burger-menu__trigger" data-element="burger-menu-trigger" type="button" aria-label="Open menu">
             <span class="burger-menu__bar" aria-hidden="true"></span>
           </button>
-          <div class="burger-menu__panel" data-element="burger-menu-panel">
+          <div class="burger-menu__panel nav-close" data-element="burger-menu-panel">
             ${this.initialMarkup} 
           </div>
         </div>
@@ -69,6 +69,7 @@ class BurgerMenu extends HTMLElement { // create new Class
         this.panel = this.querySelector('[data-element="burger-menu-panel"]'); // grab the panel
         this.root = this.querySelector('[data-element="burger-root"]'); // grab the root
         this.focusableElements = getFocusableElements(this); // grab the foucsable elements
+        this.navClose = this.querySelector('.nav-close');
       
         if (this.trigger && this.panel) { // are the trigger and panel both present
           this.toggle();
@@ -78,6 +79,12 @@ class BurgerMenu extends HTMLElement { // create new Class
       
             this.toggle();
           });
+
+          
+            this.navClose.addEventListener('click', evt => { // closes nav when click outside of links
+              this.toggle();
+            });
+          
       
           document.addEventListener('focusin', () => { // for accessibility... the burger menu covers the entire viewport. This means that if the user is shifting focus with their tab key and focus escapes the burger menu itself: they will lose focus visually. This focusin event listener on the document, outside of this component, tests to see if the currently focused element (i.e. document.activeElement) is inside our component...
             if (!this.contains(document.activeElement)) { // ... if it isn’t: we force the menu closed, immediately.
